@@ -11,15 +11,19 @@ class App extends Component {
         name: 'tara'
       }
     }
+    this.getFormData = this.getFormData.bind(this);
   }
 
   getFormData(value) {
-    // evt.preventDefault();
-    console.log("got data");
-    // this comes from the form and triggered on the submit button
+    // SETS THE DISPLAY FOR THE EXERCISE WITH WHAT WAS SUBMITTED
 
-    // get the data from the Form
-    console.log("im in the value ",value);
+    this.setState(prevState => ({
+    exercise: {
+        ...prevState.exercise,
+        name: value
+    }
+}))
+
   }
   render() {
     return (
