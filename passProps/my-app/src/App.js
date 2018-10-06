@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Form from "./Form"
 import Display from "./Display"
@@ -9,7 +8,7 @@ class App extends Component {
     super(props);
     this.state = {
       exercise: {
-        name: 'test'
+        name: 'tara'
       }
     }
   }
