@@ -13,9 +13,13 @@ class App extends Component {
     }
   }
 
-  getFormData(evt) {
-    evt.preventDefault();
+  getFormData(value) {
+    // evt.preventDefault();
     console.log("got data");
+    // this comes from the form and triggered on the submit button
+
+    // get the data from the Form
+    console.log("im in the value ",value);
   }
   render() {
     return (
