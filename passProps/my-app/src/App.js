@@ -10,11 +10,11 @@ class App extends Component {
       newExerciseData: [
         {
           name: "tara",
-          body: ""
+          body: "legs"
         },
         {
           name: "bob",
-          body: ""
+          body: "arms"
         }
       ]
     };
@@ -22,14 +22,15 @@ class App extends Component {
   }
 
   getFormData(value) {
-
+    // this comes from the form and triggered on the submit button
+    // SETS THE DISPLAY FOR THE EXERCISE WITH WHAT WAS SUBMITTED
     this.setState((prevState, props) => {
       return {
         newExerciseData: [...prevState.newExerciseData, value]
       };
     });
   }
-  
+
   render() {
     return (
       <div className="App">

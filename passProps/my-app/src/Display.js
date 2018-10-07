@@ -8,7 +8,7 @@ class Display extends Component {
     const ex = exercisesArray.map((ex, i) => {
       return (
         <div className="ex" key={i}>
-          <h3>{ex.name}</h3>
+          <h3>{ex.name} : {ex.body}</h3>
         </div>
       );
     });

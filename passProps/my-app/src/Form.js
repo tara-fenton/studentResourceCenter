@@ -8,8 +8,7 @@ class Form extends Component {
       newExerciseData: {
         name: "",
         body: ""
-      },
-      created: false
+      }
     };
 
     this.onChange = this.onChange.bind(this);
@@ -39,6 +38,11 @@ class Form extends Component {
           <input
             value={name}
             onChange={evt => this.onChange("name", evt.target.value)}
+          />
+          Body:
+          <input
+            value={body}
+            onChange={evt => this.onChange("body", evt.target.value)}
           />
           <button type="submit" value="Submit">
             Submit
